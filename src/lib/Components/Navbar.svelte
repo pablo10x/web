@@ -1,19 +1,27 @@
 <script>
-  import { page } from '$app/stores';
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-  $: activeUrl = $page.url.pathname;
+  import {
+    Navbar,
+    NavBrand,
+    NavLi,
+    NavUl,
+    NavHamburger,
+    DarkMode,
+  } from "flowbite-svelte";
 </script>
 
 <Navbar>
   <NavBrand href="/">
-    <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite</span>
+    <!--<img src="/images/flowbite-svelte-icon-logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />-->
+    <span
+      class="self-center whitespace-nowrap text-xl font-semibold text-dark dark:text-white"
+      >BlazePunch</span
+    >
   </NavBrand>
   <NavHamburger />
-  <NavUl {activeUrl}>
+  <NavUl>
     <NavLi href="/">Home</NavLi>
-    <NavLi href="/docs/components/navbar">Navbar</NavLi>
-    <NavLi href="/docs/components/accordion">Accordion</NavLi>
-    <NavLi href="/docs/components/alert">Alert</NavLi>
-    <NavLi href="/docs/components/avatar">Avatar</NavLi>
+    <NavLi href="/about">games</NavLi>
+    <NavLi href="/about">privacy policy</NavLi>
+    <DarkMode>Dark</DarkMode>
   </NavUl>
 </Navbar>

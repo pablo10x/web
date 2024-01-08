@@ -1,6 +1,10 @@
 <script>
-	export let data;
+  //export let data;
+  import { Card } from "flowbite-svelte";
 </script>
 
-
-<h1>{data.post.title}</h1>
+<div class=" align-middle justify-center flex flex-row px-2 py-10 gap-6 ">
+  <Card>fdf</Card>
+  <Card>fdf</Card>
+  <Card>fdf</Card>
+</div>

@@ -1,8 +1,10 @@
 <script>
-	import Navbar from "$lib/Components/Navbar.svelte";
-      
+	import "../app.pcss";
+    import Navbar from "$lib/Components/Navbar.svelte";
+    import {Alert} from 'flowbite-svelte'
       </script>
 
-<Navbar/>
+<Navbar></Navbar>
 
-<slot />
+<slot></slot>
+
